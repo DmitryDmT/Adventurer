@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: none;
+    background-color: #ec4848;
+    border: none;
+    border-radius: 1px;
+}
