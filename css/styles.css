@@ -1,0 +1,12 @@
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+@import 'utils/fonts.css';
+
+@import 'general/general.css';
+@import 'general/container.css';
+
+@import 'blocks/main-header/main-header.css';
+@import 'blocks/main-header/main-navigation.css';
+@import 'blocks/main-header/main-search.css';
+
+@import 'blocks/main/main-slider.css';
