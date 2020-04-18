@@ -1,0 +1,25 @@
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-navigation__item {
+    padding: 35px 0;
+    margin-right: 34px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3f444a;
+}
+
+.main-navigation__item--active {
+    color: #ec4848;
+}
+
+/* States */
+.main-navigation__item:hover {
+    color: #ec4848;
+}

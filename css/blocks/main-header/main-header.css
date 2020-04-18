@@ -1,0 +1,14 @@
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header__logo {
+    font-family: "PT Sans", sans-serif;
+    font-size: 34px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #ec4848;
+}
