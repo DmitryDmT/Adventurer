@@ -6,38 +6,44 @@
     <meta name="keywords" content="#">
     <meta name="description" content="#">
     <title>Adventurer</title>
+    <link rel="stylesheet" href="css/utils/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <h1>Adventurer</h1>
-        <nav class="main-navigation">
-            <a href="#" class="main-navigation__item  main-navigation__item--active">Home</a>
-            <a href="#" class="main-navigation__item">About</a>
-            <a href="#" class="main-navigation__item">Service</a>
-            <a href="#" class="main-navigation__item">Contact</a>
-            <a href="#" class="main-navigation__item">Faq</a>
-            <a href="#" class="main-navigation__item">Support</a>
-            <section class="main-search">
-                <span class="main-search__icon">Поиск</span>
-            </section>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="main-header">
+            <h1 class="main-header__logo">Adventurer</h1>
+            <nav class="main-navigation">
+                <a href="#" class="main-navigation__item  main-navigation__item--active">Home</a>
+                <a href="#" class="main-navigation__item">About</a>
+                <a href="#" class="main-navigation__item">Service</a>
+                <a href="#" class="main-navigation__item">Contact</a>
+                <a href="#" class="main-navigation__item">Faq</a>
+                <a href="#" class="main-navigation__item">Support</a>
+                <section class="main-search">
+                    <button class="main-search__btn" type="button">Поиск</button>
+                </section>
+            </nav>
+        </header>
+    </div>
     <main class="main">
         <section class="main-slider">
             <section class="main-slider__controls">
-                <span class="main-slider__control  main-slider__control-left">
-
-                </span>
-                <span class="main-slider__control  main-slider__control-right">
-
-                </span>
+                <button class="main-slider__control  main-slider__control-left">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="main-slider__control  main-slider__control-right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
             </section>
             <section class="main-slider__slides">
-                <section class="main-slider__slide">
-                    <span class="main-slider__title">Adventurer</span>
-                    <p class="main-slider__content">Muri, a template at the heart of the beauty</p>
-                    <a href="#" class="btn  main-slider__redirect-btn">See more</a>
+                <section class="main-slider__slide  main-slider__slide-1">
+                    <div class="main-slider__slide-overlay"></div>
+                    <section class="main-slider__body">
+                        <span class="main-slider__title">Adventurer</span>
+                        <p class="main-slider__content">Muri, a template at the heart of the beauty</p>
+                        <a href="#" class="btn  main-slider__redirect-btn">See more</a>
+                    </section>
                 </section>
             </section>
         </section>
