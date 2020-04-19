@@ -1,0 +1,31 @@
+.about-hiring {
+    height: 514px;
+    padding-top: 1px;
+    margin-bottom: 100px;
+    background: #374756 url('../../../../img/hiring/about-hiring-background.jpg') no-repeat center 0;
+}
+
+.about-hiring__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-hiring__icon {
+    margin-bottom: 25px;
+    fill: #ec4848;
+}
+
+.about-hiring__title {
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.about-hiring__content {
+    margin-bottom: 30px;
+    padding: 0 170px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+}

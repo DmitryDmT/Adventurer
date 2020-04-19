@@ -24,6 +24,11 @@ ul {
     list-style: none;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 .btn {
     padding: 20px 40px;
     font-size: 16px;
@@ -38,6 +43,7 @@ ul {
 }
 
 .section-title {
+    margin-top: 0;
     margin-bottom: 45px;
     font-weight: bold;
     font-size: 40px;

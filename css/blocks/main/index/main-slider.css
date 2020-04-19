@@ -57,7 +57,7 @@
 .main-slider__slide-1 {
     color: #fff;
     background-color: #090909;
-    background-image: url('../../../img/slider-1.jpg');
+    background-image: url('../../../../img/sliders/main_slider/slider-1.jpg');
 }
 
 .main-slider__slide-overlay {

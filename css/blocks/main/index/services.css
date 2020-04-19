@@ -1,0 +1,50 @@
+.services {
+    display: flex;
+    flex-direction: row;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 460px;
+    padding: 35px 25px 0;
+    margin-right: 60px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.services__item:last-of-type {
+    margin-right: 0;
+}
+
+.services__icon {
+    width: 80px;
+    height: 80px;
+    fill: #3f444a;
+}
+
+.services__title {
+    margin-top: 50px;
+    margin-bottom: 18px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.services__content {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* States */
+.services__item:hover {
+    color: #ffffff;
+    background-color: #3f444a;
+}
+
+.services__item:hover .services__icon {
+    fill: #ffffff;
+}
