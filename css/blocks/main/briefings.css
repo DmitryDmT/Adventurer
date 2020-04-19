@@ -1,0 +1,93 @@
+.briefings {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+}
+
+.briefings__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.briefings__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px 60px 20px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #3f444a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.briefings__icon {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    background-color: #afafaf;
+    border: 4px solid #6a6e72;
+    border-radius: 50%;
+}
+
+.briefings__icon::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: -18px;
+    width: 1px;
+    height: 58px;
+    background-color: #bebebe;
+}
+
+.briefings__icon::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -17px;
+    width: 19px;
+    height: 8px;
+    background-color: #afafaf;
+}
+
+.briefings__icon i {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+
+.briefings__content {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 35px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    background-color: #f8f8f8;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+
+/* States */
+.briefings__content--active {
+    display: block;
+}
+
+.briefings__title--active {
+    background-color: #ec4848;
+}
+
+.briefings__icon--active {
+    display: block;
+}
+
+.briefings__icon--not-active {
+    display: none;
+}
