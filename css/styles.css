@@ -9,7 +9,26 @@
 @import 'blocks/main-header/main-navigation.css';
 @import 'blocks/main-header/main-search.css';
 
-@import 'blocks/main/main-slider.css';
-@import 'blocks/main/about-us.css';
-@import 'blocks/main/briefings.css';
-@import 'blocks/main/skills.css';
+@import 'blocks/main/index/main-slider.css';
+@import 'blocks/main/index/about-us.css';
+@import 'blocks/main/index/briefings.css';
+@import 'blocks/main/index/skills.css';
+@import 'blocks/main/index/about-service.css';
+@import 'blocks/main/index/services.css';
+@import 'blocks/main/index/about-hiring.css';
+@import 'blocks/main/index/about-offer.css';
+@import 'blocks/main/index/offers.css';
+@import 'blocks/main/index/about-reviews.css';
+@import 'blocks/main/index/review.css';
+@import 'blocks/main/index/about-statistics.css';
+@import 'blocks/main/index/statistics-list.css';
+@import 'blocks/main/index/about-team.css';
+@import 'blocks/main/index/team-members.css';
+@import 'blocks/main/index/about-works.css';
+@import 'blocks/main/index/works-filter.css';
+@import 'blocks/main/index/works.css';
+@import 'blocks/main/index/about-clients.css';
+@import 'blocks/main/index/clients.css';
+
+@import 'blocks/main-footer/main-footer.css';
+@import 'blocks/main-footer/subscription.css';
