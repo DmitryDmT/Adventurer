@@ -31,6 +31,7 @@
     margin-bottom: 18px;
     font-size: 22px;
     text-transform: uppercase;
+    color: #3f444a;
 }
 
 .services__content {
@@ -43,6 +44,10 @@
 .services__item:hover {
     color: #ffffff;
     background-color: #3f444a;
+}
+
+.services__item:hover .services__title {
+    color: #ffffff;
 }
 
 .services__item:hover .services__icon {
