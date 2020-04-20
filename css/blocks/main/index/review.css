@@ -1,0 +1,42 @@
+.review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.review:last-of-type {
+    margin-bottom: 0;
+}
+
+.review__image {
+    margin-right: 30px;
+}
+
+.review__customer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #3f444a;
+}
+
+.review__mini-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ec4848;
+}
+
+.review__content {
+    font-size: 18px;
+    line-height: 25px;
+}

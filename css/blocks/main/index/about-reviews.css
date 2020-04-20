@@ -1,0 +1,6 @@
+.about-reviews__slide {
+    display: flex;
+    flex-direction: column;
+    padding-right: 250px;
+    padding-left: 200px;
+}
