@@ -21,7 +21,7 @@
 
 .offers__item::before {
     position: absolute;
-    top: 29px;
+    top: 5px;
     left: 0;
     width: 80px;
     height: 80px;
@@ -46,6 +46,8 @@
 }
 
 .offers__title {
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 25px;
     line-height: 25px;
     text-transform: uppercase;
