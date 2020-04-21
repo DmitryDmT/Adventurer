@@ -1,6 +1,34 @@
+.about-reviews__slider {
+    margin-bottom: 25px;
+}
+
 .about-reviews__slide {
     display: flex;
     flex-direction: column;
     padding-right: 250px;
     padding-left: 200px;
+}
+
+.about-reviews__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-reviews__control {
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    background-color: #3f444a;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.about-reviews__control:last-of-type {
+    margin-right: 0;
+}
+
+/* States */
+.about-reviews__control--active {
+    background-color: #ec4848;
 }
