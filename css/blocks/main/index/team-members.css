@@ -1,0 +1,85 @@
+.team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: inherit;
+}
+
+.team-members__item {
+    position: relative;
+    width: 268px;
+    height: 300px;
+    background-color: #161a1e;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    cursor: pointer;
+}
+
+.team-members__item-1 {
+    background-image: url('../../../../img/team/member-1.jpg');
+}
+
+.team-members__item-2 {
+    background-image: url('../../../../img/team/member-2.jpg');
+}
+
+.team-members__item-3 {
+    background-image: url('../../../../img/team/member-3.jpg');
+}
+
+.team-members__item-4 {
+    background-image: url('../../../../img/team/member-4.jpg');
+}
+
+.team-members__member-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: 100px;
+    padding-top: 10px;
+    color: #ffffff;
+    background-color: #e84b4b;
+}
+
+.team-members__title {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.team-members__content {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.team-members__socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-members__social {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.team-members__social:last-of-type {
+    margin-right: 0;
+}
+
+/* States */
+.team-members__item:hover .team-members__member-info {
+    display: flex;
+}
+
+.team-members__social:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}

@@ -1,0 +1,18 @@
+.about-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 95px;
+}
+
+.about-team__title {
+    margin-bottom: 60px;
+}
+
+.about-team__content {
+    margin-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+    font-size: 18px;
+    line-height: 32px;
+}
