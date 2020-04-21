@@ -36,3 +36,7 @@
 .about-reviews__control--active {
     background-color: #ec4848;
 }
+
+.about-reviews__control:hover {
+    background-color: #ec4848;
+}
