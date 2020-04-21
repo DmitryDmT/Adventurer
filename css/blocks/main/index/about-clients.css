@@ -1,0 +1,7 @@
+.about-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1110px;
+    margin-bottom: 100px;
+}
