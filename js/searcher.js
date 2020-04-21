@@ -9,10 +9,24 @@ let foundElements = [];
 let foundCounter = 0;
 let currentFoundHTML = '';
 
-const searcherClickHandler = (evt) => {
-  evt.stopPropagation();
-  searchInput.style.display = 'block';
-  searchInput.focus();
+const gatherFoundElements = (searchTextRegExp) => {
+  foundElements = [];
+
+  for (const paragraph of paragraphs) {
+    if (searchTextRegExp.test(paragraph.textContent)) {
+      foundElements.push(paragraph);
+    }
+  }
+};
+
+const scrollToElement = () => {
+  const foundElementPos = foundElements[foundCounter].getBoundingClientRect().top + window.scrollY;
+  window.scrollTo(0, foundElementPos);
+};
+
+const saveAndReplaceToHighlight = (searchTextRegExp) => {
+  currentFoundHTML = foundElements[foundCounter].innerHTML;
+  foundElements[foundCounter].innerHTML = currentFoundHTML.replace(searchTextRegExp, '<span class="highlight">' + searchInput.value + '</span>');
 };
 
 searchInput.addEventListener('keyup', (evt) => {
@@ -23,23 +37,20 @@ searchInput.addEventListener('keyup', (evt) => {
       foundElements[foundCounter - 1].innerHTML = currentFoundHTML;
     }
 
-    const foundElementPos = foundElements[foundCounter].getBoundingClientRect().top + window.scrollY;
-    window.scrollTo(0, foundElementPos);
-
-    currentFoundHTML = foundElements[foundCounter].innerHTML;
-    foundElements[foundCounter].innerHTML = currentFoundHTML.replace(searchTextRegExp, '<span class="highlight">' + searchInput.value + '</span>');
+    scrollToElement();
+    saveAndReplaceToHighlight(searchTextRegExp);
 
     foundCounter++;
   } else {
-    foundElements = [];
-
-    for (const paragraph of paragraphs) {
-      if (searchTextRegExp.test(paragraph.textContent)) {
-        foundElements.push(paragraph);
-      }
-    }
+    gatherFoundElements(searchTextRegExp);
   }
 });
+
+const searcherClickHandler = (evt) => {
+  evt.stopPropagation();
+  searchInput.style.display = 'block';
+  searchInput.focus();
+};
 
 searchButton.addEventListener('click', searcherClickHandler);
 
