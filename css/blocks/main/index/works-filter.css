@@ -1,0 +1,28 @@
+.works-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 410px;
+    margin-bottom: 15px;
+}
+
+.works-filter__filter-item {
+    padding-right: 11px;
+    padding-left: 11px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #3f444a;
+}
+
+/* States */
+.works-filter__filter-item--active {
+    color: #ec4848;
+}
+
+.works-filter__filter-item:hover {
+    color: #ec4848;
+}

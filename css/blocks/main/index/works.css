@@ -1,0 +1,123 @@
+.works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 295px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.works__item:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.works__info {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.works__title {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #5c6873;
+}
+
+.works__content {
+    font-size: 12px;
+    line-height: 12px;
+    color: #5c6873;
+}
+
+.works__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+    background-color: rgba(236, 72, 72, 0.78);
+}
+
+.works__link {
+    position: relative;
+    width: 33px;
+    height: 33px;
+    margin-right: 13px;
+    color: #ffffff;
+    border: 3px solid #ffffff; 
+    border-radius: 50%;
+}
+
+.works__link-1::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    width: 4px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.works__link-1::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 33px;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.works__link-2::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: -7px;
+    width: 4px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.works__link i {
+    position: absolute;
+}
+
+.works__link-1 i {
+    top: 4px;
+    left: 5px;
+}
+
+.works__link-2 i {
+    top: 5px;
+    left: 5px;
+}
+
+.works__link:last-of-type {
+    margin-right: 0;
+}
+
+/* States */
+.works__item:hover .works__overlay {
+    display: flex;
+}
+
+.works__link:hover {
+    color: #000000;
+    border: 3px solid #000000; 
+}
