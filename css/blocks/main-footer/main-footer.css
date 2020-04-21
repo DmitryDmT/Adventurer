@@ -1,4 +1,171 @@
 .main-footer {
     display: flex;
     flex-direction: column;
+    background-color: #151515;
+}
+
+.main-footer__columns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    border-bottom: 3px solid #534a4a;
+}
+
+.main-footer__column {
+    width: 285px;
+}
+
+.main-footer__column-title {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.main-footer__column-body {
+    padding-left: 15px;
+}
+
+.main-footer__adventurer-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ec4848;
+}
+
+.main-footer__adventurer-body {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #cccccc;
+}
+
+.main-footer__adventurer-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.main-footer__adventurer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    font-size: 21px;
+    line-height: 21px;
+    color: #444444;
+    background-color: #f7f7f7;
+}
+
+.main-footer__column-features-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 35px;
+    font-size: 15px;
+    line-height: 15px;
+    color: #cccccc;
+}
+
+.main-footer__column-features-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.main-footer__column-features-item::before {
+    content: url('../../../img/footer/icon-tick.png');
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    background-color: #ec4848;
+}
+
+.main-footer__tags-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-footer__column-tags-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ec4848;
+}
+
+.main-footer__flicker-posts-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-footer__column-flicker-posts-item {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.main-footer__socials-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.main-footer__social-content {
+    font-size: 14px;
+    line-height: 19px;
+    color: #bbbbbb;
+}
+
+.main-footer__socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-footer__social {
+    padding: 5px;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #737373;
+}
+
+.main-footer__social:last-of-type {
+    margin-right: 0;
+}
+
+/* States */
+.main-footer__social:hover {
+    color: #ec4848;
+}
+
+.main-footer__column-flicker-posts-item:hover {
+    opacity: 1;
+}
+
+.main-footer__adventurer-social:hover {
+    color: #ffffff;
+    background-color: #ec4848;
 }

@@ -36,9 +36,16 @@
     height: 50px;
     padding: 0;
     margin: 0;
+    font-size: 25px;
     color: #ffffff;
     background-color: #ec4848;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    opacity: 0.8;
+}
+
+/* States */
+.subscription__form-submit-btn:hover {
+    opacity: 1;
 }
